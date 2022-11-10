@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+.main-dados {
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    /* box-shadow: 5px 5px 5px #f8010135; */
+}
+
+.left-dados {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    padding: 1rem;
+}
+
+.left-dados>img {
+    width: 80%;
+}
+
+.rigth-dados {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem;
+}
+
+
+.login-button {
+    width: 60%;
+    display: flex;
+    margin-top: -5px;
+    margin-left: -130px;
+    justify-content: right;
+}
+
+.login-button button {
+    border: none;
+    width: 50%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f80101;
+    transition: 1s;
+}
+
+.login-button button:hover {
+    background-color: rgb(163, 0, 0);
+}
+
+.login-button button {
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #f80101;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.title>h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1 rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.input-box label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+/*============ RESPONSIVIDADE:================= */
+
+@media screen and (max-width: 1250px) {
+    main-dados {
+        flex-direction: column;
+    }
+
+    .left-dados {
+        width: 50%;
+
+    }
+
+    .rigth-dados {
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width: 1140px) {
+
+    main-dados {
+        flex-direction: column;
+    }
+
+    .left-dados {
+        width: 40%;
+    }
+
+    .right-dados {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+
+    .main-dados {
+        flex-direction: column;
+    }
+
+    .left-dados {
+        display: none;
+    }
+
+    .rigth-dados {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login-button {
+        margin: 0;
+    }
+
+    .input-group {
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+    .input-box {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+
+    .login-button {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    .main-dados {
+        flex-direction: column;
+    }
+
+    * {
+        font-size: 16px;
+    }
+
+    .left-dados {
+        display: none;
+    }
+
+    .rigth-dados {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login-button {
+        margin: 0;
+    }
+
+    .input-group {
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+    .input-box {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+
+    .login-button {
+        width: 80%;
+    }
+
+}

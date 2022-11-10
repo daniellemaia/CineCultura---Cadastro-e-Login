@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CADASTRE-SE</title>
+     <link rel="stylesheet" href="../css/cadastro.css" />
+     <link rel="shortcut icon" href="../imagens/icocine.ico" type="image/x-icon">
+     <script src="../js/cadastro.js" defer></script>
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="left-area">
+        <img src="../imagens/austrounauta-cadastro.svg" class="image-area">
+      </div>
+
+      <div class="rigth-cadastro">
+          <form action="POST" class="area-cadastro">
+            <div class="form-header">
+              <div class="title">
+                <h1>cadastre-se</h1>
+              </div>
+
+            <div class="input-group">
+
+              <div class="input-box">
+                <label for="nome"> Nome completo: </label>
+                <input class="form-cadastro" id="nome-completo" type="text" name="nome-completo" placeholder="Nome completo" required>
+              </div>
+
+             <div class="input-box">
+              <label for="endereço"> Endereço: </label>
+            <input class="form-cadastro" id="endereco" type="adress" name="endereco" placeholder="ex.: Rua das flores, 234" required>
+             </div>
+
+             <div class="input-box">
+              <label for="bairro"> Bairro: </label>
+              <input class="form-cadastro" id="bairro" type="text" name="bairro" placeholder="Informe o bairro" required>
+             </div>
+
+            <div class="input-box">
+              <label for="cep"> CEP: </label>
+              <input class="form-cadastro" id="cep" type="number" name="cep" placeholder="CEP" required>
+            </div>
+
+            <div class="input-box">
+              <label for="telefone"> Telefone: </label>
+              <input class="form-cadastro" id="telefone" type="number" name="telefone" placeholder="(xx) xxxx-xxxx" required>
+            </div>
+
+            <div class="input-box">
+              <label for="email"> E-mail: </label>
+              <input class="form-cadastro" id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+
+            <div class="input-box">
+              <label for="usuario"> Usuário: </label>
+              <input class="form-cadastro" id="usuario" type="text" name="usuario" placeholder="Usuário" required>
+            </div>
+
+            <div class="input-box">
+              <label for="senha"> Senha: </label>
+              <input class="form-cadastro" id="senha" type="password" name="senha" placeholder="Digite a senha" required>
+            </div>
+
+            <div class="input-box">
+              <label for="senha"> Confirme sua senha: </label>
+              <input class="form-cadastro" id="confirmesenha" type="password" name="confirmesenha" placeholder="Confirme sua senha" required>
+            </div>
+
+            <div class="login-button">
+              <button type="submit" id="submit" class="entrar">Entrar</button>
+            </div>
+            </div>
+      </div>
+    </div>
+  </div>
+  </form>
+ </body>
+</html>

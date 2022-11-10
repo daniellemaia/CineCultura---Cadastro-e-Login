@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONFIRA SEUS DADOS</title>
+     <link rel="stylesheet" href="../css/dados.css" />
+     <link rel="shortcut icon" href="../imagens/icocine.ico" type="image/x-icon">
+     <script src="../js/dados.js" defer></script>
+  </head>
+  <body>
+    <div class="main-dados">
+      <div class="left-dados">
+        <img src="../imagens/astro-dados.svg" class="image-area">
+      </div>
+
+      <div class="rigth-dados">
+          <form action="POST" class="form-class">
+            <div class="form-header">
+              <div class="title">
+                <h1>Dados informados: </h1>
+              </div>
+
+            <div class="input-group">
+
+              <div class="input-box">
+                <label for="nome"> Nome completo: </label>
+                <input class="form-dados" id="nome-completo" name="nome-completo" readonly>
+              </div>
+
+             <div class="input-box">
+              <label for="endereço"> Endereço: </label>
+              <input class="form-dados" id="endereco" name="endereco" readonly>
+             </div>
+
+             <div class="input-box">
+              <label for="bairro"> Bairro: </label>
+              <input class="form-dados" id="bairro" name="bairro"readonly>
+             </div>
+
+            <div class="input-box">
+              <label for="cep"> CEP: </label>
+              <input class="form-dados" id="cep" name="cep" readonly>
+            </div>
+
+            <div class="input-box">
+              <label for="telefone"> Telefone: </label>
+              <input class="form-dados" id="telefone" name="telefone"  readonly>
+            </div>
+
+            <div class="input-box">
+              <label for="email"> E-mail: </label>
+              <input class="form-dados" id="email" name="email"  readonly>
+            </div>
+
+            <div class="input-box">
+              <label for="usuario"> Usuário: </label>
+              <input class="form-dados" id="usuario" name="usuario" readonly>
+            </div>
+
+            <div class="input-box">
+              <label for="senha"> Senha: </label>
+              <input class="form-dados" id="senha" name="senha" readonly>
+            </div>
+
+            <div class="login-button">
+              <button type="button" class="voltar" onclick="location.href='index.html'">Voltar</button>
+            </div>
+            </div>
+          </form>
+      </div>
+    </div>
+  </body>
+</html>

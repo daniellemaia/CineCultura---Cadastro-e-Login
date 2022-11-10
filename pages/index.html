@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINECULTURA - LOGIN</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="shortcut icon" href="../imagens/icocine.ico" type="image/x-icon">
+    <script src="../js/index.js" defer></script>
+
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1> Faça seu login <br> e viaje na magia do cinema</h1>
+            <img src="../imagens/astronaut-animate.svg" class="image-login" alt="animação austronauta">
+
+        </div>
+        <form action="POST" class="area-login">
+             <div class="card-login">
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario"  class="usuario" id="usuario" placeholder="Usuário">
+
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" class="senha" id="senha" placeholder="Senha">
+                    </div>
+                <button type="submit"  class="btn-entrar">Entrar</button>
+                <button type="button" class="btn-cadastrar" onclick="location.href='cadastro.html'">Cadastrar</button>
+            </div>
+        </form>
+    </div>      
+</body>
+</html>
